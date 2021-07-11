@@ -1,0 +1,374 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(240, 241, 245);
+    position: relative;
+}
+
+.banner-area{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Pictures/Background.jpg');
+    background-size: cover;
+}
+
+.content-area{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    padding-right: 5%;
+    padding-top: 1%;
+}
+
+.nav li a:hover{
+    color: white;
+}
+
+.nav li:hover{
+    text-decoration: overline white; 
+    text-underline-position: below;
+    transition: 5s ease-out;
+}
+
+header{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+    font-size: 100%;
+}
+
+.col{
+    height: 50vh;
+}
+
+.lg {
+    width: 6em;
+    height: 5em;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin:6% 36%;
+    /* margin-bottom: 2em; */
+    width: 4em;
+    height: 4em;
+    padding: 5px;
+}
+
+.lg:hover{
+    border: 4px solid rgb(8, 8, 8);
+}
+
+.ya:hover{
+   box-shadow:  5px 5px 25px -5px rgb(212, 209, 209);
+   /* background-color: rgba(248, 245, 245, 0.925); */
+}
+
+.ya .btn{
+    background-color: rgb(32, 31, 31);
+    border-color: rgb(20, 20, 20);
+}
+
+.ya .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.ps{
+    text-align: left;
+}
+
+.rb .btn{
+    color: white;
+    border-color:white ;
+}
+
+.rb .btn:hover{
+    border-color: black;
+    background-color: white;
+    color:black ;
+}
+
+.yu{
+    font-size: large;
+    margin: 5px 30px;
+}
+
+.pd {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 200px;
+    /* border: 2px solid black; */
+}
+
+.pd .col{
+    margin:20px 0px;
+    height: 60vh;
+}
+
+.pd ul{
+    list-style-type: none;
+}
+
+.newsl{
+  width: 100%;
+  height: 60vh;
+  background-size:contain;
+  background-color: rgb(25, 25, 26);
+}
+
+.pd .as{
+    width: 100%;
+}
+
+.con{
+    position: relative;
+    width: 80%;
+}
+
+.con img{
+    border: 7px solid rgb(221, 216, 216);
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 10rem;
+    height: 18rem;
+    transition: .5s ease;
+    border-radius: 50%;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  html{
+    scroll-behavior: smooth;;
+  }
+  
+  .con:hover .image{
+    opacity: 0.2;
+    /* border: none; */
+  }
+
+  .con:hover .middle{
+      opacity: 1;
+  }
+
+  .no img{
+    border: none;
+    opacity: 0.6;
+  }
+
+  .no img:hover{
+    opacity: 100;
+    box-shadow: 10px black;
+  }
+  .text {
+    /* background-color: white; */
+    font-size: xx-large;
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    /* padding: 16px 32px; */
+  }
+
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    border: 5px solid white;
+    border-radius: 5px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    border: 3px solid white;
+    border-radius:5px ;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .laz{
+      width: 50%;
+      height: 50%;
+  }
+
+  .cont{
+      height: 100vh;
+      color: white;
+      background-color: rgb(22, 21, 21);
+  }
+
+  .cont .col img{
+      width: 100%;
+      height: 100%;
+  }
+
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  section video{
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    padding: 3px;
+    border: 8px solid white;
+    border-radius: 1%;
+  }
+
+  section .navigation{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .navigation li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 3px 3px 0;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  section .navigation li img{
+    width: 120px;
+    transition: 0.5s;
+  }
+
+  section .navigation li:hover{
+    opacity: 1;
+  }
+
+  section .navigation li img:hover{
+    width: 200px;
+    opacity: 1;
+  }
+
+  .vd {
+    background-color: rgba(14, 13, 13, 0);
+  }
+
+  .imah{
+    width: 50%;
+  }
+
+  .ima{
+    width: 100%;
+    margin-left:17%;
+  }
+
+  .ima img{
+    margin:5px 0px;
+    width: 30%;
+    height: 50%;
+  }
